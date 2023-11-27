@@ -206,7 +206,6 @@ button:last-child {
 }
            
                 /* FOOTER */
-            /*footer section 1*/
 
 footer {
     background-color: #23272a
@@ -273,26 +272,31 @@ footer span, a {
 .column-small nav > a {
     padding: 5px 0;
 }
-                /* footer section 2 */
+                /* footer logo e bottone */
 
-.footer-section-2 {
+.footer-bottom {
     margin-top: 1px;
     padding-top: 15px;
 }
 
-.footer-outro {
+.footer-bottom > .container {
     height: 100px;
     display: flex;
+    padding: 0;
     justify-content: space-between;
     align-items: center;
-            /*debug*/
-    background-color: #7fffd4;
 }
 
-.footer-logo,
-.footer-button {
-    padding: 5px;
-            /*debug*/
-    background-color: #feb7c2;
-    border: var(--bordo);
+.footer-logo {
+    width: 100px;
+    height: 30px;
+    background-image: url("../img/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.footer-bottom .footer-button {
+    padding: 8px 15px;
+    background-color: #a1b0e5;
 }
