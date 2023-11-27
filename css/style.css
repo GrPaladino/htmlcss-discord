@@ -13,13 +13,14 @@ img {
 
 :root {
     --bordo: 2px dashed black;
-    --padding: 40px 0;
+    --padding: 40px 10px;
 }
 
 .container {
     max-width: 1000px;
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 h2 {
@@ -29,13 +30,15 @@ h2 {
 
 button {
     border-radius: 12px;
-    padding: 3px 5px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
 }
 
-.jumbotron .buttons,
-.mac {
-    padding: 20px;
+.jumbotron > .buttons {
     text-align: center;
+    padding-top: 20px;
 }
                 /* HEADER*/
 
@@ -103,17 +106,12 @@ header {
 }
                 
 .jumbotron p {
-    text-align: center;
+    width: 60%;
+    margin: 0 auto;
     padding: 0 20px;
     font-size: 1.2rem;
     color: white;
-}
-                
-.jumbotron button {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 20px;
-    border: none;
+    text-align: center;
 }
                 
 button:last-child {
@@ -124,12 +122,26 @@ button:last-child {
 
                 /*MAIN*/
 
-.doppio {
-    height: 400px;
+.row .container {
+    min-height: 400px;
     display: flex;
     padding: var(--padding);
 }
-   
+
+.row:nth-of-type(even) {
+    background-color: #d3d3d3;
+}
+
+                /* box di testo */
+.box-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    gap: 30px;
+}
+                
                 /* immagini */
 .img {
     width: 60%;
@@ -138,100 +150,59 @@ button:last-child {
     background-position: center; 
 }
             
-#main2 {
+#study-group {
     background-image: url("../img/item1.svg");
 }
             
-#main3 {
+#just-chilling {
     background-image: url("../img/item2.svg");
 }
 
-#main4 {
+#fandom {
     background-image: url("../img/item3.svg");
+}
 
-}
-               /* logo onda */
-.logo-onda {
-    height: 100px;
-    background-image: url("../img/wave.svg");
-    background-size: cover;
-}
-            
-.logo-onda grigio {
-            
-}
-            
-.logo-onda bianco {
-            
-}
-                /* box di testo */
-.box-text {
-    width: 40%;
+                /* Download */
+
+.row > .download {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 90px;
-    gap: 30px;
-}
-
-
-.card {
-    width: 700px;
-    height: 300px;
-    margin: 0 auto;
-}
-            
-                /* blocco 3*/
-
-.block-3 {
-            /*debug*/
-    background-color: #d3d3d3;
-}
- 
-
-                /* SESSION 5 */
-.block-5 {
+    align-items: center;     
     padding: var(--padding);
-            
-            /*debug*/
-    background-color: #d3d3d3;
 }
 
-.text {
+.download > .text {
     text-align: center;
 }
  
-.text p {
+.download > .text p {
     margin: 0 auto;
     width: 60%;
 }
 
-.card-verde {
-    display: flex;
-    flex-direction: column;
-    align-items: center;     
-                 /*debug*/
-    height: 600px;   
-    background-color: #228b22;
-    border: var(--bordo)
-}
-
-.background {
+.download > .background-img {
     width: 100%;
-    height: 55%;
+    height: 550px;
     background-image: url("../img/item4-big.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
-h3 {
+.download > h3 {
     background-image: url("../img/stars.svg");
     padding-top: 25px;
+    margin-bottom: 20px;
     background-repeat: no-repeat;
     width: 54%;
     text-align: center;
     font-size: 1.5rem;
+}
+
+.download > .download-mac {
+    background-color: #8da0e0;
+    padding: 10px 20px;
+    font-size: 1.2rem;
 }
            
                 /* FOOTER */
