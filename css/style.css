@@ -27,14 +27,25 @@ h2 {
     padding: 15px 0;
 }
 
+button {
+    border-radius: 12px;
+    padding: 3px 5px;
+}
+
+.jumbotron .buttons,
+.mac {
+    padding: 20px;
+    text-align: center;
+}
                 /* HEADER*/
 
 header {
-    background-color: #3161e0;
+    background-image: url("../img/jumbo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.wrapper {
-    width: 100%;
+.header-wrapper {
     padding: 15px 0;
     display: flex;
 }
@@ -69,15 +80,47 @@ header {
     text-decoration: none;
     color: white;
 }
-                /* button */
+                /* header-button */
 
-.header-button,
-.mac {
-    border-radius: 12px;
-    padding: 3px 5px;
+.small > .header-button {
     background-color: white;
-  
+    padding: 4px 10px;
+    border: none;
+    color: black;
 }
+
+                /* JUMBO */
+                
+.jumbotron {
+    padding: var(--padding);
+}
+                
+.jumbotron h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 25px;
+}
+                
+.jumbotron p {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+                
+.jumbotron button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+}
+                
+button:last-child {
+    background-color: #222629;
+    color: white;
+}
+                
 
                 /*MAIN*/
 
@@ -131,46 +174,6 @@ header {
     gap: 30px;
 }
 
-                /* blocco 1 */
-                
-.main-1 {
-    background-image: url("../img/jumbo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: var(--padding);
-}
-
-.titol {
-    color: white;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 25px;
-}
-
-.description {
-    text-align: center;
-    padding: 0 20px;
-    font-size: 1.2rem;
-    color: white;
-}
-
-.buttons,
-.mac {
-    padding: 20px;
-    text-align: center;
-}
-
-.main-1 button {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 20px;
-    border: none;
-}
-
-button:last-child {
-    background-color: #222629;
-    color: white;
-}
 
 .card {
     width: 700px;
