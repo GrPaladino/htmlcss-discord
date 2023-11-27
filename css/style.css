@@ -1,0 +1,295 @@
+            /* GENERICS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --bordo: 2px dashed black;
+    --padding: 40px 0;
+}
+
+.container {
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+                /* HEADER*/
+
+header {
+    background-color: #3161e0;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+}
+
+.header-tab {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+                /* logo header */
+
+.small {
+    flex-basis: 20%;
+}
+
+#header-logo {
+    background-image: url("../img/logo.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+                /* link header */
+
+.large {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.large a {
+    text-decoration: none;
+    color: white;
+}
+                /* button */
+
+.header-button,
+.mac {
+    border-radius: 12px;
+    padding: 3px 5px;
+    background-color: white;
+  
+}
+
+                /*MAIN*/
+
+.doppio {
+    height: 400px;
+    display: flex;
+    padding: var(--padding);
+}
+   
+                /* immagini */
+.img {
+    width: 60%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+}
+            
+#main2 {
+    background-image: url("../img/item1.svg");
+}
+            
+#main3 {
+    background-image: url("../img/item2.svg");
+}
+
+#main4 {
+    background-image: url("../img/item3.svg");
+
+}
+               /* logo onda */
+.logo-onda {
+    height: 100px;
+    background-image: url("../img/wave.svg");
+    background-size: cover;
+}
+            
+.logo-onda grigio {
+            
+}
+            
+.logo-onda bianco {
+            
+}
+                /* box di testo */
+.box-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 90px;
+    gap: 30px;
+}
+
+                /* blocco 1 */
+                
+.main-1 {
+    background-image: url("../img/jumbo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: var(--padding);
+}
+
+.titol {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 25px;
+}
+
+.description {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.buttons,
+.mac {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-1 button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+}
+
+button:last-child {
+    background-color: #222629;
+    color: white;
+}
+
+.card {
+    width: 700px;
+    height: 300px;
+    margin: 0 auto;
+}
+            
+                /* blocco 3*/
+
+.block-3 {
+            /*debug*/
+    background-color: #d3d3d3;
+}
+ 
+
+                /* SESSION 5 */
+.block-5 {
+    padding: var(--padding);
+            
+            /*debug*/
+    background-color: #d3d3d3;
+}
+
+.text {
+    text-align: center;
+}
+ 
+.text p {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.card-verde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+                 /*debug*/
+    height: 600px;   
+    background-color: #228b22;
+    border: var(--bordo)
+}
+
+.background {
+    width: 100%;
+    height: 55%;
+    background-image: url("../img/item4-big.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+h3 {
+    background-image: url("../img/stars.svg");
+    padding-top: 25px;
+    background-repeat: no-repeat;
+    width: 54%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+           
+                /* FOOTER */
+            /*footer section 1*/
+
+#footer-section-1 {
+    padding: 10px 0 30px 0;
+            /*debug*/
+    background-color: #23272a;
+}
+
+.main-footer {
+    height: 450px;
+    display: flex;
+}
+            
+            /*cards*/
+
+            
+.footer-card-rosa {
+    width: 30%;
+            /*debug*/
+    background-color: #f08080;
+    border: var(--bordo);
+}
+            
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+            
+.footer-card-cyan {
+    flex-basis: 25%;
+            /*debug*/
+    background-color: #20b2aa;
+    border: 2px dashed white;
+}
+
+                /* footer section 2 */
+
+.footer-section-2 {
+    margin-top: 1px;
+    padding-top: 15px;
+            /*debug*/
+    background-color: #23272a;
+}
+
+.footer-outro {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+            /*debug*/
+    background-color: #7fffd4;
+}
+
+.footer-logo,
+.footer-button {
+    padding: 5px;
+            /*debug*/
+    background-color: #feb7c2;
+    border: var(--bordo);
+}
