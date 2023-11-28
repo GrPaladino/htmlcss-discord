@@ -121,6 +121,19 @@ button:last-child {
                 
 
                 /*MAIN*/
+.wave {
+    display: block;
+}
+ 
+.wave-reverse {
+    display: block;
+    transform: rotate(180deg);
+}
+
+.row::before {
+    background-image: url("../img/wave-grigia.svg");
+   
+}
 
 .row .container {
     min-height: 400px;
@@ -141,7 +154,6 @@ button:last-child {
     padding: 0 50px;
     gap: 30px;
 }
-                
                 /* immagini */
 .img {
     width: 60%;
